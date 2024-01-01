@@ -20,3 +20,5 @@ async function bootstrap() {
 }
 
 bootstrap();
+
+// nest-js-grider % npx ts-node-dev src/main.ts
