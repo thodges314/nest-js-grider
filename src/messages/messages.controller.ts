@@ -5,4 +5,4 @@ export class MessagesController {}
 
 // nest generate controller messages/messages --flat
 // messages/messages means messages folder, messages class name
-// flat means don't create an extra 'messages' folder
+// flat means don't create an extra 'controllers' folder in messages
