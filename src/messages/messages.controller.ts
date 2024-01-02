@@ -1,12 +1,14 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 
+import { CreateMessageDto } from './dtos/create-message.dto';
+
 @Controller('messages')
 export class MessagesController {
   @Get()
   listMessages() {}
 
   @Post()
-  createMessage(@Body() body: any) {
+  createMessage(@Body() body: CreateMessageDto) {
     console.log(body);
   }
 
@@ -15,7 +17,3 @@ export class MessagesController {
     console.log(id);
   }
 }
-
-// nest generate controller messages/messages --flat
-// messages/messages means messages folder, messages class name
-// flat means don't create an extra 'controllers' folder in messages
